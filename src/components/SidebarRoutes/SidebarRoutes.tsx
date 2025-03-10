@@ -2,7 +2,7 @@
 import { Separator } from "@/components/ui/separator"
 import SidebarItem from "../SidebarItem/SidebarItem"
 import { dataGeneralSidebar, dataToolSidebar, dataSupportSidebar } from './SidebarRoutes.data'
-import { Button } from "../ui/button"
+import { Button } from "@/components/ui/button"
 function SidebarRoutes() {
     return (
         <div className="flex flex-col justify-between h-full">
