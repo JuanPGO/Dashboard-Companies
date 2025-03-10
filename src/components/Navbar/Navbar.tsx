@@ -3,11 +3,12 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 import { UserButton } from "@clerk/nextjs"
 import { Menu, Search } from "lucide-react"
 import SidebarRoutes from "../SidebarRoutes/SidebarRoutes"
+import { ToggleTheme } from "../ToggleTheme/ToggleTheme"
 function Navbar() {
     return (
-        <div className="flex items-center px-2 gap-x-4 md:px-6 justify-between w-full bg-background border-b h-20">
+        <nav className="flex items-center px-2 gap-x-4 md:px-6 justify-between w-full bg-background border-b h-20">
 
-            <div className="block md:hidden">
+            <div className="block xl:hidden">
                 <Sheet>
                     <SheetTrigger>
                         <Menu />
@@ -24,10 +25,11 @@ function Navbar() {
                 <Search strokeWidth={1} className="absolute top-2 right-2" />
             </div>
             <div className="flex gap-x-2 items-center">
+                <ToggleTheme />
                 <UserButton />
             </div>
 
-        </div>
+        </nav>
     )
 }
 
